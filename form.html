@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorar Jogos | GameZone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>GAMEZONE</h1>
+        <p>Seu próprio jogo começa aqui.</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="form.html">Explorar jogos</a>
+        <a href="about.html">Sobre</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Encontre seu próprio jogo!</h2>
+            <p>Conte um pouco sobre suas preferencias gamer</p>
+
+            <form action="formAction.html" method="GET">
+
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="plataforma">Onde voce joga?</label>
+                <select id="plataforma" name="plataforma" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Mobile">Celular</option>
+                </select>
+
+                <label for="genero">Qual seu genero favorito?</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Ação e aventura">Ação e aventura</option>
+                    <option value="RPG e fantasia">RPG e fantasia</option>
+                    <option value="Corrida e esportes">Corrida e esportes</option>
+                    <option value="Terror e suspense">Terror e suspense</option>
+                    <option value="Estratégia">Estratégia</option>
+                </select>
+            
+                <button type="submit">enviando preferencias</button>
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
