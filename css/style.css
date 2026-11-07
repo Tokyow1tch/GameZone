@@ -1,0 +1,216 @@
+/* configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111018;
+    color: #F4F0FA;
+    font-family: Arial, sans-serif;
+
+}
+
+/*cabeçalho */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #211832;
+
+}
+
+header h1 {
+    color: #E14BFF;
+    font-size: 42px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px #9b5cff;
+
+}
+
+header p {
+    margin-top: 10px;
+    color: #D6C4E8;
+
+}
+
+/* menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+    background-color: #181321;
+
+}
+
+nav a {
+    color: #F4F0FA;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    color: #E14BFF;
+
+}
+
+/* conteudo principal */
+
+main {
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
+section h2 {
+    color: #C58BFF;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/*botão */
+
+section a {
+    display: inline-block;
+    background-color: #9B5CFF;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    background-color: #E14BFF;
+    box-shadow: 0 0 15px #E14BFF;
+}
+
+/*rodapé */
+   
+footer {
+ text-align: center;
+ padding: 25px;
+ background-color: #211832;
+ color: #B9A9C9;
+}
+
+/* CATEGORIAS DE JOGOS */
+
+.categorias {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.categorias h2 {
+    color: #E14BFF;
+    margin-bottom: 15px;
+}
+
+.categorias > p {
+    color: #D6C4E8;
+    margin-bottom: 35px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #211832;
+    border: 1px solid #9B5CFF;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.game-card h3 {
+    color: #E14BFF;
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    color: #D6C4E8;
+    line-height: 1.5;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #9B5CFF;
+    border-color: #E14BFF;
+}
+
+
+/* Formulario */
+
+form {
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #211832;
+    border: 1px solid #4B2675;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #4B2675;
+    text-align: left;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #E14BFF;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE ( TELAS MENORES) */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    main {
+        padding: 60px 15px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+}
